@@ -96,7 +96,7 @@ test_transform = v2.Compose([
 # ─────────────────────────────────────────────────────────────────────────────
 def train_transforms(examples):
     examples["pixel_values"] = [
-        train_transform(image.convert("RGB")) 
+        train_transform(image.convert("RGB"))
         for image in examples["image"]
     ]
     return examples
